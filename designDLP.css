@@ -87,5 +87,52 @@ body{
 
 .caption{
     font-family:roboto;
+    
+}
+.precaption{
+    font-family:roboto;
+    font-weight:bold;
+}
 
+.headline{
+    font-family:oswald;
+    font-size:30px;
+
+}
+
+.aboutContent{
+    display:block;
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom:10%;
+    text-align:center;
+}
+
+.steven1{
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width:60%;
+}
+
+.aboutPicture{
+    max-width:100%;
+    margin-bottom:-5px;
+}
+
+.samplesContent{
+    display:block;
+    margin-bottom:10%;
+    text-align:center;
+}
+
+.audioPadding{
+    margin-bottom:3%;
+}
+
+.samplesImage{
+    border-radius: 50%;
+}
+
+.samples{
+    background-image:url("images\about-pic1.jpg")
 }
