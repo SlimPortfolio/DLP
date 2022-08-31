@@ -61,27 +61,27 @@ body{
 
 .title{
     font-family:oswald;
-    font-size:60px;
+    font-size:70px;
     text-align:center;
 
 }
 
 .footerText{
     font-family:oswald;
-    font-size:30px;
+    font-size:40px;
     text-align:center;
 }
 
 .subtitle{
     font-family:oswald;
-    font-size:16px;
+    font-size:20px;
     text-align:center;
     font-style:italic;
 
 }
 .subheading{
     font-family:oswald;
-    font-size:16px;
+    font-size:20px;
     /* font-weight:bold; */
     text-align:center;
 }
@@ -97,7 +97,7 @@ body{
 
 .headline{
     font-family:oswald;
-    font-size:30px;
+    font-size:40px;
 
 }
 
