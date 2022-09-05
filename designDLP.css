@@ -137,3 +137,78 @@ body{
 .samples{
     background-image:url("images\about-pic1.jpg")
 }
+
+.book-grid{
+    margin-left:20%;
+    margin-right:20%;
+    display:grid;
+    grid-template:repeat(12, 1fr) /repeat(2,1fr);
+    /* border:solid; */
+    column-gap:2%;
+    /* align-items:end; */
+    
+}
+
+.item-book-full{
+    grid-column-end: span 2;
+    text-align:start;
+    font-family:oswald;
+    font-size:20px;
+}
+
+.item-book-full-response{
+    grid-column-end: span 2;
+    text-align:start;
+    font-family:roboto;
+    font-size:20px;
+}
+
+.item-book-half{
+    grid-column-end: span 1;
+    text-align:start;
+    font-family:oswald;
+    font-size:20px;
+}
+
+.item-book-half-response{
+    grid-column-end: span 1;
+    text-align:start;
+    font-family:roboto;
+    font-size:20px;
+}
+
+.item-book-full-notes{
+    grid-column-end: span 2;
+    grid-row-start: 10;
+    grid-row-end:13;
+    font-family:roboto;
+    font-size:20px;
+}
+
+.item-submit{
+    /* border:2px solid ; */
+    font-family:Source Sans Pro,sans-serif;
+    color:white;
+    font-weight:bold;
+    display:block;
+    justify-content:center;
+    text-align:center;
+}
+
+.submit-align{
+    display:flex;
+    justify-content: center;
+}
+
+.bookBackground{
+    background-color:whitesmoke;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+.specialNote{
+    font-family:oswald;
+    color:red;
+    font-size:30px;
+    text-align:center;
+}
