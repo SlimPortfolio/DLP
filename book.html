@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="designDLP.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,41 +13,44 @@
 <body>
     <!-- Navigation Bar at the top -->    
     <div class="header">
-        <a class="item btn btn-dark rounded-0" href="index.html">HOME</a>
+        <a class="item btn btn-dark rounded-0" href="home.html">HOME</a>
         <a class="item btn btn-dark rounded-0" href="about.html">ABOUT</a>
         <a class="item btn btn-dark rounded-0" href="samples.html">SAMPLES</a>
         <a class="item btn btn-dark rounded-0" href="book.html">BOOK!</a>
-
-    </div>
-    <!-- Body of the Page -->
+    </div>    
+    <!-- title of the page -->
     <div>
         <br>
         <br>
         <p class="title">BOOK!</p>
-        <p class="subtitle">Ready to book or want more information? Please fill out the fields below and we will reach out to you with more details!</p>
-            
+        <p  id="subtitle" class="subtitle">Ready to book or want more information? Please fill out the fields below and we will reach out to you with more details!</p>
+        <br>
+    </div>
+
+    <!-- Body of the Page -->
+    <div id="div1"> 
         <div class="bookBackground">
             <br>
             <form class="book-grid" id="myForm">
                 <label class="item-book-full">Name:</label>           
-                <input type="text" class="item-book-full-response">
+                <input id="name" type="text" class="item-book-full-response">
                 <label class="item-book-half">Wedding Date:</label>
                 <label class="item-book-half">Wedding Location:</label>
-                <input type="date" class="item-book-half-response">                      
-                <input type="text" class="item-book-half-response" placeholder="(City, State)">
+                <input id="date" type="date" class="item-book-half-response">                      
+                <input id="location"type="text" class="item-book-half-response" placeholder="(City, State)">
                 <label class="item-book-half">Phone Number:</label>
                 <label class="item-book-half">Email:</label>
-                <input type="text" class="item-book-half-response" placeholder="(xxx-xxx-xxxx)">            
-                <input type="text"class="item-book-half-response">
+                <input id="phoneNumber" type="text" class="item-book-half-response" placeholder="(xxx-xxx-xxxx)">            
+                <input id="email" type="text"class="item-book-half-response">
                 <label class="item-book-full">Song you would like a sample for:</label>
-                <input type="text" class="item-book-full-response">
+                <input id="song" type="text" class="item-book-full-response">
                 <label class="item-book-full">Notes:</label>
-                <input type="text" class="item-book-full-notes">     
+                <input id="notes" type="text" class="item-book-full-notes">    
             </form>
             <br>
             <p class="specialNote">Please note that this page is still in progress and the form will NOT submit your information. At this time, please send all inquiries to our email found below.</p>
             <div class="submit-align">
-                <button class="item-submit btn btn-success rounded-0 ">SUBMIT</button>
+                <button onclick="submitForm()" class="item-submit btn btn-success rounded-0 ">SUBMIT</button>
             </div>
             <br>
         </div>
@@ -57,5 +61,6 @@
     <!-- Footer -->
     <div class="footer">
         <p class="footerText">Contact Us: <br> stevenylim17@gmail.com</p>
+<script src="script.js"></script>
 </body>
 </html>
